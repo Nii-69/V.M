@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation V.M</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>Voyage</span> <b>in</b> World</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#a-propos">à propos</a></li>
+            <li><a href="#popular-destination">destinations</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <a href="#" class="btn-reservation">Réserver Maintenant</a>
+
+        <div class="responsive-menu"></div>
+    </header>
+    <!-- acceuil section -->
+    <section id="home">
+        <h2>Nous suivre</h2>
+        <h4>Voyagez en Sécurité</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit accusantium consectetur in voluptates
+            neque.</p>
+        <p>molestiae illum eaque praesentium esse. Quos iusto.</p>
+        <a href="#" class="btn-reservation home-btn">Réserver Maintenant</a>
+        <div class="find_trip">
+            <!-- liaison avec java script pour faire la recherche de voyage selon les critères suivants : pays, ville, région -->
+            <form id="searchForm">
+                <div>
+                    <label>Continent</label>
+                    <input type="text" id="region" placeholder="Entrez un continent">
+                </div>
+
+                <div>
+                    <label>Pays</label>
+                    <input type="text" id="pays" placeholder="Entrez un Pays">
+                </div>
+
+                <div>
+                    <label>Ville</label>
+                    <input type="text" id="ville" placeholder="Entrez une ville">
+                </div>
+
+
+
+                <input type="submit" value="voir">
+
+            </form>
+        </div>
+    </section>
+
+    <!-- A propos section -->
+    <section id="a-propos">
+        <h1 class="title">à propos</h1>
+        <div class="img-desc">
+            <div class="left">
+                <video src="images/video.mp4" autoplay loop></video>
+            </div>
+            <div class="right">
+                <h3>Nous voyageons pour chercher d'autres états, d'autres vies, d'autres âmes.</h3>
+                <p>Des auteurs comme Marcel Proust soulignent que « le vrai voyage ce n'est pas de chercher des nouveaux
+                    paysages mais un nouveau regard ».</p>
+                <a href="#">Lire Plus</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section destination -->
+    <section id="popular-destination">
+        <h1 class="title">destinations populaires</h1>
+        <div class="content">
+            <!-- box -->
+            <!-- POUR LIAISON AVEC LE JAVA SCRIPT POUR LA RECHERCHE DE VOYAGE SELON LES CRITÈRES SUIVANTS : PAYS, VILLE, RÉGION -->
+            <div class="box" data-ville="paris" data-pays="france" data-region="europe">
+                <img src="images/paris.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Paris</h4>
+                        <p>Paris, capitale de la France, est une grande ville européenne et un centre mondial de l'art,
+                            de la mode, de la gastronomie et de la culture. Son paysage urbain du XIXe siècle est
+                            traversé par de larges boulevards et la Seine. Outre les monuments comme la tour Eiffel et
+                            la cathédrale gothique Notre-Dame du XIIe siècle, la ville est réputée pour ses cafés et ses
+                            boutiques de luxe bordant la rue du Faubourg-Saint-Honoré.</p>
+
+                        <a href="https://www.paris.fr/" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="marseille" data-pays="france" data-region="europe">
+                <img src="images/marseille.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Marseille</h4>
+                        <p>Marseille, ville de la France, est une destination touristique populaire connue pour ses
+                            plages,
+                            sa culture caribéenne et son ambiance animée. La ville abrite des attractions comme le
+                            quartier de Little Havana et le parc virtuel de Wynwood.</p>
+
+                        <a href="https://www.marseille.fr/" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="berlin" data-pays="allemagne" data-region="europe">
+                <img src="images/berlin.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Berlin</h4>
+                        <p>Berlin, capitale de l'Allemagne, est une grande ville européenne et un centre mondial de
+                            l'art,
+                            de la mode, de la gastronomie et de la culture. Son paysage urbain du XIXe siècle est
+                            traversé par de larges boulevards et la Spree. Outre les monuments comme le mur de Berlin et
+                            la cathédrale gothique Notre-Dame du XIIe siècle, la ville est réputée pour ses cafés et ses
+                            boutiques de luxe bordant la rue du Faubourg-Saint-Honoré.</p>
+
+                        <a href="https://www.visitberlin.de/fr" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="cologne" data-pays="allemagne" data-region="europe">
+                <img src="images/cologne.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Cologne</h4>
+                        <p>Cologne est une ville âgée de 2 000 ans. Elle enjambe le Rhin et se trouve en Allemagne de
+                            l'Ouest. Elle est également le centre culturel de la région. Emblème de l'architecture
+                            gothique classique édifiée au sein d'une vieille ville reconstruite, la cathédrale de
+                            Cologne, avec ses deux flèches, est également connue pour son reliquaire médiéval en or et
+                            la vue spectaculaire qu'elle offre sur le fleuve. Le musée Ludwig expose non loin des œuvres
+                            d'art du XXe siècle, dont de nombreux chefs-d'œuvre de Picasso ; le musée romain-germanique
+                            abrite des antiquités romaines.</p>
+
+                        <a href="https://www.germany.travel/fr/villes-et-culture/cologne.html" target="_blank">Lire
+                            Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="moscou" data-pays="russie" data-region="europe">
+                <img src="images/moscou.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Moscou</h4>
+                        <p>Moscou, capitale de la Russie, est une grande ville européenne et un centre mondial de l'art,
+                            de la mode, de la gastronomie et de la culture. Son paysage urbain du XIXe siècle est
+                            traversé par de larges boulevards et la Moskva. Outre les monuments comme le Kremlin et
+                            la cathédrale de Saint-Basile, la ville est réputée pour ses cafés et ses
+                            boutiques de luxe bordant la rue du Faubourg-Saint-Honoré.</p>
+
+                        <a href="https://www.moscou.fr/" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="Saint-Pétersbourg " data-pays="russie" data-region="europe">
+                <img src="images/Saint-Pétersbourg.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Saint-Pétersbourg</h4>
+                        <p>Saint-Pétersbourg, ville de la Russie, est une destination touristique populaire connue pour
+                            son architecture baroque, ses musées et son ambiance culturelle. La ville abrite des
+                            attractions comme le Château de Peterhof et le Musée d'Art de la Russie.</p>
+
+                        <a href="https://www.saintpetersbourg.fr/" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="miami" data-pays="usa" data-region="amerique">
+                <img src="images/miami.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Miami</h4>
+                        <p>Miami, ville de la Floride, est une destination touristique populaire connue pour ses plages,
+                            sa culture caribéenne et son ambiance animée. La ville abrite des attractions comme le
+                            quartier de Little Havana et le parc virtuel de Wynwood.</p>
+
+                        <a href="https://www.miami.fr/" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="los-angeles" data-pays="usa" data-region="amerique">
+                data-region="amérique-du-nord">
+                <img src="images/los-angeles.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Los-Angeles</h4>
+                        <p>Los Angeles, ville de la Californie, est une destination touristique populaire connue pour
+                            son industrie du cinéma, ses plages et son ambiance animée. La ville abrite des attractions
+                            comme le Griffith Park et le Hollywood Walk of Fame.</p>
+
+                        <a href="https://www.losangeles.fr/" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="Toronto" data-pays="canada" data-region="amerique">
+                data-region="amérique-du-nord">
+                <img src="images/Toronto.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Toronto</h4>
+                        <p>Toronto, ville du Canada, est une destination touristique populaire connue pour
+                            son architecture diversifiée, ses musées et son ambiance culturelle. La ville abrite des
+                            attractions comme le CN Tower et le Musée d'Art de Toronto.</p>
+
+                        <a href="https://www.destinationontario.com/fr-ca/regions-villes/toronto" target="_blank">Lire
+                            Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="Montréal" data-pays="canada" data-region="amerique">
+                data-region="amérique-du-nord">
+                <img src="images/Montréal.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Montréal</h4>
+                        <p>Montréal, ville du Canada, est une destination touristique populaire connue pour
+                            son architecture diversifiée, ses musées et son ambiance culturelle. La ville abrite des
+                            attractions comme le CN Tower et le Musée d'Art de Montréal.</p>
+
+                        <a href="https://www.mtl.org/" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="Buenos Aires" data-pays="argentine" data-region="amerique">
+                data-region="amérique-du-nord">
+                <img src="images/Buenos Aires.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Buenos Aires</h4>
+                        <p>Buenos Aires, ville de l'Argentine, est une destination touristique populaire connue pour
+                            son architecture diversifiée, ses musées et son ambiance culturelle. La ville abrite des
+                            attractions comme le CN Tower et le Musée d'Art de Montréal.</p>
+
+                        <a href="https://www.argentina-excepcion.com/regions-argentine/region-province-de-buenos-aires/ville-buenos-aires"
+                            target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="Córdoba" data-pays="argentine" data-region="amerique">
+                data-region="amérique-du-nord">
+                <img src="images/Córdoba.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Córdoba</h4>
+                        <p>Córdoba, ville de l'Argentine, est une destination touristique populaire connue pour
+                            son architecture diversifiée, ses musées et son ambiance culturelle. La ville abrite des
+                            attractions comme le CN Tower et le Musée d'Art de Montréal.</p>
+
+                        <a href="https://www.voyage-argentine.com/cordoba-info" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="tokio" data-pays="japon" data-region="asie">
+                <img src="images/tokio.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Tokio</h4>
+                        <p>Tokio, capitale du Japon, est une ville moderne et dynamique, mélange de tradition et de
+                            technologie. Elle est connue pour ses quartiers animés, ses magasins de mode, ses
+                            restaurants renommés et ses sites historiques comme le temple de Senso-ji.</p>
+
+                        <a href="https://www.gotokyo.org/fr/index.html" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="kyoto" data-pays="japon" data-region="asie">
+                <img src="images/kyoto.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Kyoto</h4>
+                        <p>Kyoto, ville du Japon, est une destination touristique populaire connue pour
+                            son architecture diversifiée, ses temples et son ambiance culturelle. La ville abrite des
+                            attractions comme le temple de Kiyomizu-dera et le parc de Nishiki.</p>
+
+                        <a href="https://kyoto.travel/fr/" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="Pékin " data-pays="chine" data-region="asie">
+                <img src="images/Pékin.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Pékin </h4>
+                        <p>Pékin, capitale de la Chine, est une ville riche en histoire et en culture. Elle est connue
+                            pour ses monuments emblématiques comme la Cité interdite et le Mausolée de Kangxi, ainsi que
+                            pour son architecture moderne.</p>
+
+                        <a href="https://www.routard.com/fr/guide/asie/chine/pekin-beijing" target="_blank">Lire
+                            Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box" data-ville="Shanghai" data-pays="chine" data-region="asie">
+                <img src="images/Shanghai.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Shanghai</h4>
+                        <p>Sur la côte centrale de la Chine, Shanghai est la plus grande ville du pays, mais aussi un
+                            centre financier international. En son cœur se trouve le Bund, une célèbre promenade au bord
+                            de l'eau où s'alignent des immeubles de l'époque coloniale. En face du fleuve Huangpu se
+                            dresse le district futuriste de Pudong, avec notamment la tour Shanghai, de 632 m de haut,
+                            et la tour de télévision Perle de l'Orient, qui se caractérise par ses sphères roses. Le
+                            vaste jardin Yuyuan inclut des pavillons traditionnels, des tours et des bassins.</p>
+
+                        <a href="https://www.china-roads.fr/voyage/shanghai/" target="_blank"> Lire
+                            Plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" box" data-ville="dubai" data-pays="emirats arabes unis" data-region="asie">
+                <img src="images/img1.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Dubaï</h4>
+                        <p>Cette image représente le paysage urbain de Dubaï, aux Émirats arabes unis,
+                            mettant en
+                            vedette le gratte-ciel Burj Khalifa. Le Burj Khalifa est la plus haute tour du
+                            monde,
+                            culminant à 828 mètres.
+                        </p>
+                        <a href="https://dubaisite.fr/" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <div class=" box" data-ville="Abou Dabi" data-pays="emirats arabes unis" data-region="asie">
+                <img src="images/Abou Dabi.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Abou Dabi</h4>
+                        <p>Cette image représente le paysage urbain de Abou Dabi, aux Émirats arabes unis,
+                            mettant en
+                            vedette le gratte-ciel Burj Khalifa. Le Burj Khalifa est la plus haute tour du
+                            monde,
+                            culminant à 828 mètres.
+                        </p>
+                        <a href="https://www.visitonsdubai.com/abou-dhabi" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="box" data-ville="nosy be" data-pays="madagascar" data-region="afrique">
+                <img src="images/Nosy Be.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Nosy Be</h4>
+                        <p>Nosy Be est une île au large de la côte nord-ouest de Madagascar. Au sud-est, les
+                            forêts de
+                            la réserve de Lokobé abritent des caméléons, des geckos et des grenouilles.
+                            Hell-Ville, la
+                            capitale, possède des édifices coloniaux et un marché couvert. Lemuria Land se situe
+                            à
+                            proximité ; le parc accueille des lémuriens de Madagascar, ainsi que des reptiles et
+                            des
+                            oiseaux. Une distillerie du XIXe siècle s'y trouve également : elle est utilisée
+                            pour
+                            l'extraction des huiles essentielles de l'ylang-ylang, un arbre endémique.
+                        </p>
+                        <a href="https://nosybe-tourisme.com/fr/" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="box" data-ville="fort dauphin" data-pays="madagascar" data-region="afrique">
+                <img src="images/F-D.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Fort Dauphin</h4>
+                        <p>Fort Dauphin est une ville portuaire située sur l'île de Madagascar. Elle est connue
+                            pour sa
+                            beauté naturelle et ses paysages côtiers. La ville abrite plusieurs attractions
+                            touristiques, notamment des plages de sable blanc et des récifs coralliens.
+                        </p>
+                        <a href="https://madagascar-tourisme.com/fr/la-destination/le-sud-ouest/fort-dauphin/"
+                            target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="box" data-ville="Arusha" data-pays="tanzanie" data-region="afrique">
+                <img src="images/Arusha.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Arusha</h4>
+                        <p>Arusha est une ville située dans la région du Northern Circuit en Tanzanie. Elle est
+                            connue
+                            pour son rôle comme centre de tourisme et son accessibilité aux montagnes du
+                            Kilimandjaro.
+                        </p>
+                        <a href="https://www.globe-trotting.com/post/arusha-tanzanie" target="_blank">Lire
+                            Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="box" data-ville=" Zanzibar" data-pays="tanzanie" data-region="afrique">
+                <img src="images/Zanzibar.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Zanzibar</h4>
+                        <p>Zanzibar est une île située au large de la côte orientale de Tanzanie. Elle est
+                            connue pour
+                            sa
+                            culture riche, ses marchés animés et ses plages paradisiaques.
+                        </p>
+                        <a href="https://www.viamichelin.fr/cartes-plans/sites-touristiques/tanzanie/unguja_ville_et_ouest/west/zanzibar-15108"
+                            target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="box" data-ville="Marrakech" data-pays="maroc" data-region="afrique">
+                <img src="images/Marrakech.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Marrakech</h4>
+                        <p>Marrakech est une ville historique située au centre du Maroc. Elle est connue pour
+                            son
+                            architecture remarquable, ses souks animés et sa vie nocturne vibrante.
+                        </p>
+                        <a href="https://www.visitmorocco.com/fr/voyage/marrakech" target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="box" data-ville="Chefchaouen" data-pays="maroc" data-region="afrique">
+                <img src="images/Chefchaouen.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Chefchaouen</h4>
+                        <p>Chefchaouen est une ville historique située dans le Maroc. Elle est connue pour son
+                            architecture colorée et son atmosphere unique.
+                        </p>
+                        <a href="https://www.europ-assistance.fr/fr/conseils/chefchaouen-maroc-la-ville-bleue"
+                            target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="box" data-ville="Péninsule Antarctique" data-pays="" data-region="antarctique">
+                <img src="images/Péninsule Antarctique.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Péninsule Antarctique</h4>
+                        <p>La péninsule Antarctique est une région située en Antarctique. Elle est connue pour son
+                            paysage impressionnant et sa faune unique.
+                        </p>
+                        <a href="https://oceanwide-expeditions.com/fr/activites/experiences/les-paysages-magiques-de-la-peninsule-antarctique?srsltid=AfmBOopubEQi8d78EUo3FHWcX6J_5HaYAeFn8l0asxKSsMNJ4khLCQTM"
+                            target="_blank">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--  contact section -->
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <form action="">
+            <div class="left-right">
+                <div class="left">
+                    <label>Nom Complet</label>
+                    <input type="text">
+                    <label>Objet</label>
+                    <input type="text">
+                    <label>Email</label>
+                    <input type="text">
+                    <label>Message</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="right">
+                    <label>Numéro</label>
+                    <input type="text">
+                    <label>Date</label>
+                    <input type="text">
+                    <label>Autres Details</label>
+                    <input type="text">
+                    <label>Adresse</label>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1647531560805!5m2!1sfr!2sfr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <button>Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> Nataon'i <span>Nico BG</span> | Tous les droits sont réservés !</p>
+    </footer>
+
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick = function () {
+            toggle_menu.classList.toggle('active');
+            menu.classList.toggle('responsive')
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
